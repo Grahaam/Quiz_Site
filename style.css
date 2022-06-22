@@ -133,3 +133,59 @@ h2 {
     transform: scale(1.05);
     cursor: pointer;
 }
+
+/* End */
+
+.end-form-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    max-width: 30rem;
+    padding: 2rem;
+}
+
+input {
+    margin-bottom: 1rem;
+    width: 20rem;
+    padding: 1.5rem;
+    font-size: 2rem;
+    border:none;
+    box-shadow: 0 0 10px magenta;
+}
+
+input::placeholder {
+    color: rgb(255, 255, 255);
+}
+
+#username {
+    margin-bottom: 3rem;
+    width: 100%;
+    outline: none;
+}
+
+#end-text {
+    font-size: 2.5rem;
+    color: rgb(255, 255, 255); 
+    text-align: center;
+}
+
+#saveScore {
+    border: none;
+}
+
+.fa-home {
+    margin-left: 2rem;
+    font-size: 2.5rem;
+    color: rgb(255, 255, 255);
+}
+
+.end {
+    text-align: center;
+    color: white;
+}
+
+a {
+    text-decoration: none;
+}

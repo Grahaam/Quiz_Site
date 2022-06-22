@@ -14,11 +14,11 @@ let questionCounter = 0;
 let availableQuestions = [];
 const alphabet = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ';
 
-Array.from(choices).forEach(element => {
+choices.forEach(element => {
     if (element.style.height > '250px') {
     element.style.fontSize = '2rem';
     element.style.height = '250px';
-}
+    }
 });
 
 
@@ -118,7 +118,7 @@ function selectAnswer() {
         setStatusClass(button, button.dataset.correct);
         button.setAttribute('disabled', 'disabled');
     });
-    if (shuffledQuestions.length > currentQuestionIndex + 1 || currentQuestionIndex + 1 < MAX_QUESTIONSs) {
+    if (shuffledQuestions.length > currentQuestionIndex + 1 && currentQuestionIndex + 1 < MAX_QUESTIONS) {
         currentQuestionIndex++;
         setTimeout(() => {
             setNextQuestion();
@@ -127,7 +127,9 @@ function selectAnswer() {
     } else {
         localStorage.setItem('mostRecentScore', score);
         //Go to the end page
-        return window.location.assign('/end.html');
+        setTimeout(() => {
+            return window.location.assign('/end.html');
+        },1500);
     }
 
 }
@@ -190,7 +192,7 @@ function clearStatusClass (element) {
 
 
 const SCORE_PER_QUESTION = 100;
-const MAX_QUESTIONS = 3;
+const MAX_QUESTIONS = 4;
 
 
 
