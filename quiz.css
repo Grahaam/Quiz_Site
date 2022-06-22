@@ -1,0 +1,130 @@
+.btn-grid {
+    display: grid;
+    grid-template-columns: minmax(auto,400px) minmax(auto,400px);
+    grid-row: auto auto;
+    gap: 1rem;
+    margin: 20px auto;
+    text-size-adjust: auto;
+    -moz-text-size-adjust: auto;
+    -webkit-text-size-adjust: auto;
+    -ms-text-size-adjust: auto;
+    scroll-behavior: auto;
+}
+
+.choice-container {
+    display:flex;
+    flex-shrink: 999;
+    margin-bottom: 0.8rem;
+    width: 100%;
+    border-radius: 10px;
+    background: linear-gradient(90deg, rgb(185, 72, 255) 0%, rgb(158, 86, 158) 100%);
+    font-size: 3rem;
+    transition: all 0.2s ease-out;
+}
+
+.choice-container:hover, .choice-container:focus {
+    box-shadow: 0 0 1.4rem whitesmoke;
+    cursor: pointer;
+    transform: scale(1.05);
+}
+
+.choice-prefix {
+    font-size: 2rem;
+    margin: auto 1rem;
+}
+
+.choice-text {
+    display: flex;
+    margin: 1rem 2rem;
+    padding: 1rem;
+    width: 100%;
+    align-self: center;
+}
+
+#question {
+    font-size: 3.5rem;
+    margin-bottom: 1rem;
+}
+
+#next-btn {
+    display: flexbox;
+}
+
+.choice-container[disabled] {
+    color: black;
+    transition: all 0.2s ease-out;
+}
+
+.choice-container[disabled]:hover {
+    color: black;
+    cursor: not-allowed;
+    box-shadow: 0 0 5px whitesmoke;
+    transform: scale(1.1);
+}
+
+.correct {
+    background: greenyellow;
+}
+
+.incorrect {
+    background: lightcoral;
+}
+
+/* HUD */
+
+#hud {
+    display: flex;
+    justify-content: space-between;
+}
+
+#score-item {
+    justify-self: flex-end;
+}
+
+#progress-item {
+    justify-self: flex-start;
+}
+
+.hud-prefix {
+    font-size: 2rem;
+    text-align: center;
+    color: azure;
+    margin: auto;
+}
+
+.hud-main-text {
+    text-align: center;
+    font-size: 2.5rem;
+    margin: auto;
+}
+
+#score {
+    animation:alternate-reverse 6s linear infinite example;
+    font-size: 4rem; 
+}
+
+#progressBar {
+    width: 20rem;
+    height: 3rem;
+    border: 0.2rem solid yellowgreen;
+    border-radius: 50px;
+    overflow: hidden;
+    margin: 0;
+}
+
+#progressBarFull {
+    background: yellowgreen;
+    width: 0%;
+    height: 100%;
+    border: 0.2rem solid yellowgreen;
+}
+
+
+@media screen and (max-width: 780px) {
+    .btn-grid {
+        grid-template-columns: 1fr;
+        min-width: 20rem;
+    }
+
+}
+    
