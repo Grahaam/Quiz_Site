@@ -45,7 +45,7 @@ h2 {
 
 #forreal {
     font-weight: max-bold;
-    font-size: 4rem;
+    font-size: inherit;
     color: rgb(147, 81, 204);
     padding: 5px;
 }
