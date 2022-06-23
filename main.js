@@ -14,12 +14,7 @@ let questionCounter = 0;
 let availableQuestions = [];
 const alphabet = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ';
 
-choices.forEach(element => {
-    if (element.style.height > '250px') {
-    element.style.fontSize = '2rem';
-    element.style.height = '250px';
-    }
-});
+
 
 
 let questions = [
@@ -150,10 +145,7 @@ function showQuestion(question) {
 
         button.appendChild(prefix);
         button.appendChild(text);
-        if (button.style.height > '250px') {
-            button.style.fontSize = '2rem';
-            button.style.height = '250px';
-        }
+        
 
         if (answer.correct) {
             button.dataset.correct = answer.correct;
@@ -166,6 +158,13 @@ function showQuestion(question) {
             selectAnswer();
         });
         answerButtonsElement.appendChild(button);
+    });
+    choices.forEach(element => {
+        alert(element.style.height);
+        if (element.style.height > '250px') {
+        element.style.fontSize = '2rem';
+        element.style.height = '250px';
+        }
     });
 }
 
