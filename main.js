@@ -160,7 +160,6 @@ function showQuestion(question) {
         answerButtonsElement.appendChild(button);
     });
     choices.forEach(element => {
-        alert(element.style.height);
         if (element.style.height > '250px') {
         element.style.fontSize = '2rem';
         element.style.height = '250px';
