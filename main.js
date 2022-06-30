@@ -117,6 +117,7 @@ function selectAnswer() {
     if (shuffledQuestions.length > currentQuestionIndex + 1 && currentQuestionIndex + 1 < MAX_QUESTIONS) {
         currentQuestionIndex++;
         progressBarFull.style.width = `${((currentQuestionIndex) / MAX_QUESTIONS)*100}%`
+        progressTetx.innerText = `Question currentQuestionIndex / MAX_QUESTIONS`
         setTimeout(() => {
             setNextQuestion();
         }, 1500);
