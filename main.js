@@ -93,6 +93,7 @@ startQuiz();
 function startQuiz () {
     shuffledQuestions = questions.sort(() => Math.random() - .5);
     currentQuestionIndex = 0;
+    questionCounter= 0;
     score = 0;
     setNextQuestion();
 }
@@ -115,7 +116,7 @@ function selectAnswer() {
     });
     if (shuffledQuestions.length > currentQuestionIndex + 1 && currentQuestionIndex + 1 < MAX_QUESTIONS) {
         currentQuestionIndex++;
-        progressBarFull.style.width = `${((currentQuestionIndex + 1) / MAX_QUESTIONS)*100}%`
+        progressBarFull.style.width = `${((currentQuestionIndex) / MAX_QUESTIONS)*100}%`
         setTimeout(() => {
             setNextQuestion();
         }, 1500);
