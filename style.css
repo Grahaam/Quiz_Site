@@ -199,6 +199,7 @@ a {
 }
 
 .cute {
+    display: flex;
     magrgin : auto;
     width : 80%;
     height: auto;
