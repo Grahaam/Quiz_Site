@@ -115,7 +115,7 @@ function selectAnswer() {
     });
     if (shuffledQuestions.length > currentQuestionIndex + 1 && currentQuestionIndex + 1 < MAX_QUESTIONS) {
         currentQuestionIndex++;
-        progressBarFull.style.width = "`((currentQuestionIndex + 1) / MAX_QUESTIONS)*100`%" 
+        progressBarFull.style.width = '`${((currentQuestionIndex + 1) / MAX_QUESTIONS)*100}`%'
         setTimeout(() => {
             setNextQuestion();
         }, 1500);
