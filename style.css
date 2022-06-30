@@ -57,8 +57,8 @@ h2 {
 }
 
 .container {
-    width: 100vw;
-    /*height: 100vh;*/
+    width: auto;
+    height: auto;
     display: flex;
     justify-content: center;
     align-items: center;
