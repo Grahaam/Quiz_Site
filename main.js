@@ -117,7 +117,6 @@ function selectAnswer() {
     if (shuffledQuestions.length > currentQuestionIndex + 1 && currentQuestionIndex + 1 < MAX_QUESTIONS) {
         currentQuestionIndex++;
         progressBarFull.style.width = `${((currentQuestionIndex) / MAX_QUESTIONS)*100}%`
-        progressText.innerText = `Question currentQuestionIndex / MAX_QUESTIONS`
         setTimeout(() => {
             setNextQuestion();
         }, 1500);
@@ -134,6 +133,7 @@ function selectAnswer() {
 
 function showQuestion(question) {
     questionElement.innerText = question.question;
+    progressText.innerText = `Question ${currentQuestionIndex} / {MAX_QUESTIONS}`
     let prefixCount = 0;
     question.answers.forEach(answer => {
         const button = document.createElement('button');
