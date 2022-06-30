@@ -198,10 +198,11 @@ a {
     text-decoration: none;
 }
 
+/* Anniversary */
 .cute {
     display: flex;
     magrgin : auto;
-    width : 80%;
+    width : 540px;
     height: auto;
     max-height: 1000px;
     border-radius: 10px;
