@@ -63,7 +63,7 @@ h2 {
     justify-content: center;
     align-items: center;
     max-width: 1400px;
-    margin: auto auto;
+    margin: auto 1rem;
     padding: 2rem;
 
 }
