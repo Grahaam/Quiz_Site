@@ -40,7 +40,13 @@ h1 {
 
 h2 {
     font-size: 4rem;
+    color: white;
     margin-bottom: 2rem;
+}
+
+.happy {
+    align-text: center;
+    animation:alternate-reverse 30s linear infinite example;
 }
 
 #forreal {
