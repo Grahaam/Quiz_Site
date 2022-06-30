@@ -206,3 +206,6 @@ a {
     max-height: 1000px;
     border-radius: 10px;
 }
+#love {
+    animation:alternate-reverse 15s linear infinite example;
+}
