@@ -126,7 +126,10 @@
         min-width: 20rem;
     }
     .container {
-        margin: auto;
+        margin: 10px;
+    }
+    #question{
+        font-size: 80px;
     }
 }
     
