@@ -133,7 +133,7 @@ function selectAnswer() {
 
 function showQuestion(question) {
     questionElement.innerText = question.question;
-    progressText.innerText = `Question ${currentQuestionIndex} / {MAX_QUESTIONS}`
+    progressText.innerText = `Question ${currentQuestionIndex} / ${MAX_QUESTIONS}`
     let prefixCount = 0;
     question.answers.forEach(answer => {
         const button = document.createElement('button');
