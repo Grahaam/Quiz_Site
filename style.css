@@ -202,5 +202,6 @@ a {
     magrgin : auto;
     width : 80%;
     height: auto;
+    max-height: 800px;
     border-radius: 10px;
 }
