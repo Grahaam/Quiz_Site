@@ -192,6 +192,7 @@ a {
 }
 
 .cute {
-    width = 80%;
-    height = auto;
+    magrgin : auto
+    width : 80%;
+    height:= auto;
 }
