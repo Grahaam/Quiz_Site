@@ -6,13 +6,13 @@
 
 {
 
-    const num_of_hearts = 30;
+    const num_of_hearts = 60;
     const driftX = 50;
     const gravity = 100;
     const update_speed = 900; // millisecond
 
-    // const heartTypes= [... "♥💕💓💔💖💗💘💝💞💟💙💚💛💜" ];
-    const heartTypes= [... "💔♥" ];
+    const heartTypes= [... "♥💕💓💖💗💘💝💞💟💙💚💛💜" ];
+    //const heartTypes= [... "💔♥" ];
 
     const viewportWidth = document.documentElement.clientWidth;
     const viewportHeight = document.documentElement.clientHeight;
