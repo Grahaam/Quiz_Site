@@ -109,7 +109,7 @@
     border: 0.2rem solid yellowgreen;
     border-radius: 50px;
     overflow: hidden;
-    margin: 0;
+    margin-top: 14px;
 }
 
 #progressBarFull {
@@ -123,16 +123,16 @@
 @media screen and (max-width: 780px) {
     .btn-grid {
         grid-template-columns: 1fr;
-        min-width: 20rem;
+        min-width: 10rem;
     }
     .container {
         margin: 10px;
     }
     #question{
-        font-size: 80px;
+        font-size: 10vw;
     }
     .choice-container {
-       /* font-size: min(max(16px, 4vw), 22px); */
+        font-size: 6vw;   
     }
 }
     
