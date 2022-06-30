@@ -69,7 +69,7 @@
 
     const f_update_positions = (() => {
 
-        heartNodes.forEach (((xx: HTMLElement) => {
+        heartNodes.forEach (((xx= HTMLElement) => {
             xx["xxleft"] +=
                 (() => {
                     const rnd = Math.random();
