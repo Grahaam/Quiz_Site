@@ -45,7 +45,7 @@ h2 {
 }
 
 .happy {
-    align-text: center;
+    text-align: center;
     animation:alternate-reverse 30s linear infinite example;
 }
 
