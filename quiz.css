@@ -132,7 +132,7 @@
         font-size: 80px;
     }
     .choice-container {
-        font-size: min(max(16px, 4vw), 22px);
+       /* font-size: min(max(16px, 4vw), 22px); */
     }
 }
     
