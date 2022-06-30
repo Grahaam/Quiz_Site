@@ -190,3 +190,8 @@ input::placeholder {
 a {
     text-decoration: none;
 }
+
+.cute {
+    width = 80%;
+    height = auto;
+}
