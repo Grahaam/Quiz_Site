@@ -13,6 +13,8 @@ let score = 0;
 let questionCounter = 0;
 let availableQuestions = [];
 const alphabet = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ';
+const SCORE_PER_QUESTION = 100;
+const MAX_QUESTIONS = 4;
 
 
 
@@ -189,12 +191,6 @@ function clearStatusClass (element) {
     element.classList.remove('correct');
     element.classList.remove('incorrect');
 }
-
-
-
-const SCORE_PER_QUESTION = 100;
-const MAX_QUESTIONS = 4;
-
 
 
 function incrementScore (num) {
