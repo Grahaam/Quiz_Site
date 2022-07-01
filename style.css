@@ -29,7 +29,7 @@
 body {
     display: flex;
     justify-content: center;
-    align-content: center
+    align-content: center;
     font-size: calc(14px + (30 - 14) * ((100vw - 300px) / (1600 - 300)));
 }
 
