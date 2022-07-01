@@ -27,7 +27,10 @@
 }
 
 body {
-    max-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-content: center
+    font-size: calc(14px + (30 - 14) * ((100vw - 300px) / (1600 - 300)));
 }
 
 h1 {
@@ -64,6 +67,7 @@ h2 {
     align-items: center;
     margin: auto 1rem;
     padding: 2rem;
+    max-width: 1000px
 
 }
 
