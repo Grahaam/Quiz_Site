@@ -21,48 +21,50 @@ const MAX_QUESTIONS = 4;
 
 let questions = [
     {
-        question: 'What is the name of the main character in the game?',
+        question: 'Quels sont mes 2eme et 3eme prénoms?',
         answers: [
-            { text: 'Mario', correct: true },
-            { text: 'Luigi', correct: false },
-            { text: 'Peach', correct: false },
-            { text: 'Toad', correct: false }
+            { text: 'Mario, Luigi', correct: false },
+            { text: 'Jean, Bob', correct: false },
+            { text: 'Arthur, René', correct: false },
+            { text: 'Antoine, Jérémy', correct: true }
         ]
     },
     {
-        question: 'Can you jump on the ground?',
+        question: 'Quel est le truc le lus débile que j\'ai fait bourré? (simple là)',
         answers: [
-            { text: 'Yes', correct: true },
-            { text: 'No', correct: false },
+            { text: 'Faire des roulades dans monjardin en parlant anglais à quelq\'un qui ne comprend pas l\'anglais', correct: false },
+            { text: 'Courir tout nu dans la rue', correct: false },
+            { text: 'Perdre l\'intégralité de mes affaires', correct: true },
+            { text: 'Courir tout nu dans la rue', correct: false },
         ],
     },
     {
-        question: 'How many lives does the game have?',
+        question: 'Combien de gosse je voudrais?',
         answers: [
-            { text: '1', correct: true },
-            { text: '2', correct: true },
-            { text: '3', correct: true },
-            { text: '4', correct: true },
-            { text: '5', correct: true },
+            { text: '0', correct: true },
+            { text: 'Aucun', correct: true },
+            { text: 'Non vraiment c\'est horrible je veux pas d\'enfant', correct: true },
+            { text: 'Nombre de fois où le mouvement \'All life matters\' a été pertinent', correct: true },
+            { text: '5 (indice c\'est pas la bonne réponse)', correct: true },
         ]
     },
     {
-        question: 'Why is the game called Super Mario?',
+        question: 'Pourquoi je suis roux?',
         answers: [
-            { text: 'Because it is a game about Mario', correct: true },
-            { text: 'Because it is a game about Mario and Luigi', correct: false },
-            { text: 'Because it is a game about Mario and Peach', correct: false },
-            { text: 'Because it is a game about Mario and Toad', correct: false },
-            { text: 'Because it is a game about Mario and Yoshi', correct: false },
+            { text: 'Ma mère a couché avec le facteur', correct: false },
+            { text: 'Les forces toutes puissantes ont voulu punir ma mère pour avoir bu pendant la grossesse', correct: false },
+            { text: 'Accident avec un bg sur le bateau en Tunésie pendant que mon père dormais', correct: false },
+            { text: 'Je suis un endant de Satan envoyé sur Terre pour établir le chaos', correct: true },
+            { text: 'Mutation génétique banale j\'ai vraiment rien de spécial', correct: true },
         ]
     },
     {
-        question: 'Would you rather die as a ghost or a human?',
+        question: 'Quel est ma race de chien de rêve?',
         answers: [
-            {text: 'Ghost', correct: true,},
-            {text: 'Human', correct: false },
-            {text: 'Both', correct: false },
-            {text: 'None', correct: true},
+            {text: 'Husky', correct: true,},
+            {text: 'Labrador', correct: false },
+            {text: 'Berger Australien', correct: true },
+            {text: 'Jack Russel', correct: false},
         ]
     },
     {
@@ -75,14 +77,123 @@ let questions = [
         ]
     },
     {
-        question: 'Whose nose is red?',  
+        question: 'What\s the one thing I want to do on my Bucket List rn ?',  
         answers: [
-            {text: 'Mario', correct: true, },
-            {text: 'Luigi', correct: false, },
-            {text: 'Peach', correct: false, },
-            {text: 'Toad', correct: false, },
-            {text: 'Yoshi', correct: false, },
-            {text: 'Bowser', correct: false, },
+            {text: 'U', correct: true, },
+            {text: 'You', correct: true, },
+            {text: 'Also you', correct: true, },
+            {text: 'W', correct: true, },
+            {text: 'Skydiving', correct: false, },
+            {text: 'Maybe you', correct: false, },
+        ]
+    },
+    {
+        question: 'Qu\'est-ce que je voulais être étant petit ?',
+        answers: [
+            {text: 'Pompier', correct: false,},
+            {text: 'Astronaut', correct: false },
+            {text: 'Paléontologue', correct: true },
+            {text: 'Aussi intelligent que mon frère', correct: false},
+            {text: 'Heureux', correct: false},
+        ]
+    },
+    {
+        question: 'Ma couleur préférée ?',
+        answers: [
+            {text: 'Violet 🟣', correct: false,},
+            {text: 'Rouge 🔴', correct: false },
+             {text: 'Bordeaux🍷', correct: true},
+            {text: 'Orange is the new Black 🟠⚫', correct: false },
+        ]
+    },
+    {
+        question: 'Quelle a été la plus grosse influence dans ma vie?',
+        answers: [
+            {text: 'Smash', correct: true,},
+            {text: 'Mon père', correct: false },
+            {text: 'Mon grand grand frère', correct: false },
+            {text: 'Le fait que je sois roux', correct: true},
+        ]
+    },
+    {
+        question: 'Une des choses que je trouve le plus sexy sur un corps féminin?',
+        answers: [
+            {text: 'Boobiiiizz', correct: true,},
+            {text: 'LE CUL LAUL', correct: true },
+            {text: 'Le regard', correct: true },
+            {text: 'Les paumettes de dos', correct: true},
+        ]
+    },
+    {
+        question: 'Qu\'est-ce qui me saoul le plus ?',
+        answers: [
+            {text: 'Les bruits de bouche', correct: true,},
+            {text: 'Les enfants qui font du bruit', correct: false },
+            {text: 'La prof d\'anglais', correct: false },
+            {text: 'Navi dans OOT', correct: false},
+        ]
+    },
+    {
+        question: 'Quel est mon pire traumatisme ?',
+        
+        answers: [
+            {text: 'Poussin', correct: true,},
+            {text: 'Don du sang', correct: false },
+            {text: 'Mon père', correct: false },
+            {text: 'Voir un cadavre brûlé', correct: false},
+        ]
+    },
+    {
+        question: 'Quel a été mon nom de DJ ado?',
+        answers: [
+            {text: 'DJ Tobbbo', correct: false,},
+            {text: 'DJ Titi', correct: false },
+            {text: 'DJ Tobias', correct: false },
+            {text: 'DJ Tailler', correct: true},
+        ]
+    },
+    {
+        question: 'Laquelle de ces choses je ne sais PAS faire ?',
+        answers: [
+            {text: 'Compter en binaire', correct: true,},
+            {text: 'Parler français', correct: false },
+            {text: 'Choisir un film', correct: true },
+            {text: 'Rester concentré plus de 30 min', correct: false},
+        ]
+    },
+    {
+        question: 'Ma plus grande peur?',
+        answers: [
+            {text: 'Oublier comment jouer à smash', correct: true,},
+            {text: 'Devenir invisible au yeux de tous', correct: true },
+            {text: 'Mourir seul', correct: false },
+        ]
+    },
+    {
+        question: 'Mon film d\'animation préférée?',
+        answers: [
+            {text: 'Le garçon et la bête', correct: true,},
+            {text: 'Le Roi lion', correct: false },
+            {text: 'Princesse Mononoké', correct: false },
+            {text: 'Vaiana', correct: false},
+        ]
+    },
+    {
+        question: 'Quel random fact sur moi est vrai ?',
+        answers: [
+            {text: 'J\ai un bout de cartilage d\'oreille en moins', correct: false,},
+            {text: 'Je suis pas vraiment roux, je me teint souvent les cheveux c\'est pour ça qu\'ils sont éclatés', correct: false },
+            {text: 'J\'ai les metacarpes moins écarté que la normale', correct: false },
+            {text: 'Je peux faire remonter mes testicules dans mon corps', correct: true},
+        ]
+    },
+    {
+        question: 'Quel super-pouvoir je choisirai ?',
+        answers: [
+            {text: 'Super vitesse', correct: false,},
+            {text: 'Pouvoir de voler', correct: false },
+            {text: 'Contrôle du temps', correct: true },
+            {text: 'Mind control', correct: false},
         ]
     },
 ]
