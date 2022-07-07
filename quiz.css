@@ -20,6 +20,7 @@
     background: linear-gradient(90deg, rgb(185, 72, 255) 0%, rgb(158, 86, 158) 100%);
     font-size: 3rem;
     transition: all 0.2s ease-out;
+    font-size: calc(14px + (30 - 14) * ((100vw - 300px) / (1600 - 300)));
 }
 
 .choice-container:hover, .choice-container:focus {
@@ -75,6 +76,7 @@
 #hud {
     display: flex;
     justify-content: space-between;
+    font-size: calc(14px + (30 - 14) * ((100vw - 300px) / (1600 - 300)));
 }
 
 #score-item {
