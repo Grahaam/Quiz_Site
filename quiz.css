@@ -125,17 +125,17 @@
 @media screen and (max-width: 780px) {
     .btn-grid {
         grid-template-columns: 1fr;
-        min-width: 10rem;
+        min-width: 13rem;
     }
     .container {
         max-width: 340px;
     }
     #question{
-        font-size: 7vw;
+        font-size: 8.5vw;
         margin-left:20px ;
     }
     .choice-container {
-        font-size: calc(18px + (40 - 18) * ((100vw - 300px) / (1600 - 300)));   
+        font-size: calc(22px + (40 - 22) * ((100vw - 300px) / (1600 - 300)));   
     }
     #hud {
         font-size: calc(20px + (40 - 20) * ((100vw - 300px) / (768 - 300)));
