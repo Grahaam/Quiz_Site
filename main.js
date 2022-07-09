@@ -30,12 +30,12 @@ let questions = [
         ]
     },
     {
-        question: 'Quel est le truc le lus débile que j\'ai fait bourré? (simple là)',
+        question: 'Quel est le truc le plus débile que j\'ai fait bourré? (simple là)',
         answers: [
-            { text: 'Faire des roulades dans monjardin en parlant anglais à quelq\'un qui ne comprend pas l\'anglais', correct: false },
+            { text: 'Faire des roulades dans mon jardin en parlant anglais à quelqu\'un qui ne comprend pas l\'anglais', correct: false },
             { text: 'Courir tout nu dans la rue', correct: false },
             { text: 'Perdre l\'intégralité de mes affaires', correct: true },
-            { text: 'Courir tout nu dans la rue', correct: false },
+            { text: 'Tester si le couteau coupe (oui il coupe)', correct: false },
         ],
     },
     {
@@ -45,23 +45,23 @@ let questions = [
             { text: 'Aucun', correct: true },
             { text: 'Non vraiment c\'est horrible je veux pas d\'enfant', correct: true },
             { text: 'Nombre de fois où le mouvement \'All life matters\' a été pertinent', correct: true },
-            { text: '5 (indice c\'est pas la bonne réponse)', correct: true },
+            { text: '5 (indice c\'est pas la bonne réponse)', correct: false },
         ]
     },
     {
-        question: 'Pourquoi je suis roux?',
+        question: 'Pourquoi suis-je roux?',
         answers: [
             { text: 'Ma mère a couché avec le facteur', correct: false },
             { text: 'Les forces toutes puissantes ont voulu punir ma mère pour avoir bu pendant la grossesse', correct: false },
-            { text: 'Accident avec un bg sur le bateau en Tunésie pendant que mon père dormais', correct: false },
-            { text: 'Je suis un endant de Satan envoyé sur Terre pour établir le chaos', correct: true },
-            { text: 'Mutation génétique banale j\'ai vraiment rien de spécial', correct: true },
+            { text: 'Accident avec un bg sur le bateau en Tunésie pendant que mon père dormait', correct: false },
+            { text: 'Je suis un enfant de Satan envoyé sur Terre pour établir le chaos', correct: true },
+            { text: 'Mutation génétique banale j\'ai vraiment rien de spécial', correct: false },
         ]
     },
     {
-        question: 'Quel est ma race de chien de rêve?',
+        question: 'Quelle est ma race de chien de rêve?',
         answers: [
-            {text: 'Husky', correct: true,},
+            {text: 'Husky', correct: true},
             {text: 'Labrador', correct: false },
             {text: 'Berger Australien', correct: true },
             {text: 'Jack Russel', correct: false},
@@ -70,27 +70,27 @@ let questions = [
     {
         question: 'What is love?',
         answers: [
-            {text: 'Baby don\'t hurt', correct: true,},
+            {text: 'Baby don\'t hurt', correct: true},
             {text: 'Don\'t hurt me', correct: false },
             {text: 'No more', correct: false },
             {text: 'TIN TIN TIN TINTITNTIN', correct: true},
         ]
     },
     {
-        question: 'What\s the one thing I want to do on my Bucket List rn ?',  
+        question: 'What\s the one thing on my Bucket List I wanna do rn ?',  
         answers: [
-            {text: 'U', correct: true, },
-            {text: 'You', correct: true, },
-            {text: 'Also you', correct: true, },
-            {text: 'W', correct: true, },
-            {text: 'Skydiving', correct: false, },
-            {text: 'Maybe you', correct: false, },
+            {text: 'U', correct: true },
+            {text: 'You', correct: true },
+            {text: 'Skydiving', correct: false },
+            {text: 'W', correct: true },
+            {text: 'Also you', correct: true },
+            {text: 'Maybe you', correct: false },
         ]
     },
     {
         question: 'Qu\'est-ce que je voulais être étant petit ?',
         answers: [
-            {text: 'Pompier', correct: false,},
+            {text: 'Pompier', correct: false},
             {text: 'Astronaut', correct: false },
             {text: 'Paléontologue', correct: true },
             {text: 'Aussi intelligent que mon frère', correct: false},
@@ -100,7 +100,7 @@ let questions = [
     {
         question: 'Ma couleur préférée ?',
         answers: [
-            {text: 'Violet 🟣', correct: false,},
+            {text: 'Violet 🟣', correct: false},
             {text: 'Rouge 🔴', correct: false },
              {text: 'Bordeaux🍷', correct: true},
             {text: 'Orange is the new Black 🟠⚫', correct: false },
@@ -109,7 +109,7 @@ let questions = [
     {
         question: 'Quelle a été la plus grosse influence dans ma vie?',
         answers: [
-            {text: 'Smash', correct: true,},
+            {text: 'Smash', correct: true},
             {text: 'Mon père', correct: false },
             {text: 'Mon grand grand frère', correct: false },
             {text: 'Le fait que je sois roux', correct: true},
@@ -118,18 +118,18 @@ let questions = [
     {
         question: 'Une des choses que je trouve le plus sexy sur un corps féminin?',
         answers: [
-            {text: 'Boobiiiizz', correct: true,},
-            {text: 'LE CUL LAUL', correct: true },
-            {text: 'Le regard', correct: true },
+            {text: 'Boobiiiizz', correct: false},
+            {text: 'LE CUL LAUL', correct: false },
+            {text: 'Le regard', correct: false },
             {text: 'Les paumettes de dos', correct: true},
         ]
     },
     {
         question: 'Qu\'est-ce qui me saoul le plus ?',
         answers: [
-            {text: 'Les bruits de bouche', correct: true,},
             {text: 'Les enfants qui font du bruit', correct: false },
             {text: 'La prof d\'anglais', correct: false },
+            {text: 'Les bruits de bouche', correct: true},
             {text: 'Navi dans OOT', correct: false},
         ]
     },
@@ -137,7 +137,7 @@ let questions = [
         question: 'Quel est mon pire traumatisme ?',
         
         answers: [
-            {text: 'Poussin', correct: true,},
+            {text: 'Poussin', correct: true},
             {text: 'Don du sang', correct: false },
             {text: 'Mon père', correct: false },
             {text: 'Voir un cadavre brûlé', correct: false},
@@ -146,7 +146,7 @@ let questions = [
     {
         question: 'Quel a été mon nom de DJ ado?',
         answers: [
-            {text: 'DJ Tobbbo', correct: false,},
+            {text: 'DJ Tobbbo', correct: false},
             {text: 'DJ Titi', correct: false },
             {text: 'DJ Tobias', correct: false },
             {text: 'DJ Tailler', correct: true},
@@ -155,18 +155,21 @@ let questions = [
     {
         question: 'Laquelle de ces choses je ne sais PAS faire ?',
         answers: [
-            {text: 'Compter en binaire', correct: true,},
+            {text: 'Compter en binaire', correct: false},
             {text: 'Parler français', correct: false },
             {text: 'Choisir un film', correct: true },
             {text: 'Rester concentré plus de 30 min', correct: false},
+            {text: 'Faires des putain de questions', correct: true},
         ]
     },
     {
         question: 'Ma plus grande peur?',
         answers: [
-            {text: 'Oublier comment jouer à smash', correct: true,},
+            {text: 'Oublier comment jouer à smash', correct: false},
             {text: 'Devenir invisible au yeux de tous', correct: true },
             {text: 'Mourir seul', correct: false },
+            {text: 'Les Clowns', correct: false },
+            {text: 'Nathalie Kausiko Maurisé', correct: false },
         ]
     },
     {
@@ -182,7 +185,7 @@ let questions = [
         question: 'Quel random fact sur moi est vrai ?',
         answers: [
             {text: 'J\ai un bout de cartilage d\'oreille en moins', correct: false,},
-            {text: 'Je suis pas vraiment roux, je me teint souvent les cheveux c\'est pour ça qu\'ils sont éclatés', correct: false },
+            {text: 'Chui pas vraiment roux, je me teint souvent les cheveux c\'est pour ça qu\'ils sont éclatés', correct: false },
             {text: 'J\'ai les metacarpes moins écarté que la normale', correct: false },
             {text: 'Je peux faire remonter mes testicules dans mon corps', correct: true},
         ]
@@ -222,19 +225,24 @@ function selectAnswer() {
     const selectedButton = event.target;
     const correct = selectedButton.dataset.correct;
   
-
     Array.from(answerButtonsElement.children).forEach(button => {
-        setStatusClass(button, button.dataset.correct);
+        if (button === selectedButton ||button === selectedButton.parentElement) {
+            setStatusClass(button, button.dataset.correct);
+        }
         button.setAttribute('disabled', 'disabled');
     });
     if (shuffledQuestions.length > currentQuestionIndex + 1 && currentQuestionIndex + 1 < MAX_QUESTIONS) {
         currentQuestionIndex++;
+        progressText.innerText = `Question ${currentQuestionIndex}/${MAX_QUESTIONS}`
         progressBarFull.style.width = `${((currentQuestionIndex)/MAX_QUESTIONS)*100}%`
         setTimeout(() => {
             setNextQuestion();
         }, 1500);
         
     } else {
+        currentQuestionIndex++;
+        progressText.innerText = `Question ${currentQuestionIndex}/${MAX_QUESTIONS}`
+        progressBarFull.style.width = `${((currentQuestionIndex)/MAX_QUESTIONS)*100}%`
         localStorage.setItem('mostRecentScore', score);
         //Go to the end page
         setTimeout(() => {

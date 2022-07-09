@@ -18,9 +18,7 @@
     width: 100%;
     border-radius: 10px;
     background: linear-gradient(90deg, rgb(185, 72, 255) 0%, rgb(158, 86, 158) 100%);
-    font-size: 3rem;
     transition: all 0.2s ease-out;
-    font-size: calc(14px + (30 - 14) * ((100vw - 300px) / (1600 - 300)));
 }
 
 .choice-container:hover, .choice-container:focus {
@@ -37,7 +35,7 @@
 .choice-text {
     display: flex;
     margin: 1rem 0.5rem;
-    padding: 1rem;
+    padding: 0.2rem;
     width: 100%;
     align-self: center;
 }
@@ -124,18 +122,17 @@
 
 @media screen and (max-width: 780px) {
     .btn-grid {
-        grid-template-columns: 1fr;
-        min-width: 13rem;
+        grid-template-columns: minmax(auto,350px);
+        /* grid-template-rows: minmax(auto,120px) minmax(auto,120px) minmax(auto,120px) minmax(auto,120px) minmax(auto,120px) minmax(auto,120px) minmax(auto,120px) minmax(auto,120px) ; */
     }
     /* .container {
         max-width: 370px;
     } */
     #question{
         font-size: 8.5vw;
-        margin-left:20px ;
     }
     .choice-container {
-        font-size: calc(22px + (40 - 22) * ((100vw - 300px) / (1600 - 300)));   
+        font-size: calc(18px + (36 - 18) * ((100vw - 300px) / (768 - 300)));
     }
     #hud {
         font-size: calc(20px + (40 - 20) * ((100vw - 300px) / (768 - 300)));
