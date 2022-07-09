@@ -135,7 +135,7 @@
         margin-left:20px ;
     }
     .choice-container {
-        font-size: calc(25px + (60 - 25) * ((100vw - 300px) / (1600 - 300)));   
+        font-size: calc(18px + (40 - 18) * ((100vw - 300px) / (1600 - 300)));   
     }
     #hud {
         font-size: calc(20px + (40 - 20) * ((100vw - 300px) / (768 - 300)));
