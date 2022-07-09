@@ -129,6 +129,7 @@
     }
     .container {
         margin: 10px;
+        max-width: 340px;
     }
     #question{
         font-size: 10vw;
