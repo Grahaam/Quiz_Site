@@ -223,7 +223,7 @@ a {
         max-width: 340px;
     }
     .h1 {
-        font-size: calc(40px + (78 - 40) * ((100vw - 300px) / (1600 - 300)));
+        font-size: calc(30px + (78 - 30) * ((100vw - 300px) / (1600 - 300)));
     }
 
 }
