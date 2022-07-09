@@ -229,7 +229,7 @@ function selectAnswer() {
     });
     if (shuffledQuestions.length > currentQuestionIndex + 1 && currentQuestionIndex + 1 < MAX_QUESTIONS) {
         currentQuestionIndex++;
-        progressBarFull.style.width = `${((currentQuestionIndex) / MAX_QUESTIONS)*100}%`
+        progressBarFull.style.width = `${((currentQuestionIndex)/MAX_QUESTIONS)*100}%`
         setTimeout(() => {
             setNextQuestion();
         }, 1500);
@@ -246,7 +246,7 @@ function selectAnswer() {
 
 function showQuestion(question) {
     questionElement.innerText = question.question;
-    progressText.innerText = `Question ${currentQuestionIndex} / ${MAX_QUESTIONS}`
+    progressText.innerText = `Question ${currentQuestionIndex}/${MAX_QUESTIONS}`
     let prefixCount = 0;
     question.answers.forEach(answer => {
         const button = document.createElement('button');
@@ -274,12 +274,6 @@ function showQuestion(question) {
             selectAnswer();
         });
         answerButtonsElement.appendChild(button);
-    });
-    choices.forEach(element => {
-        if (element.style.height > '250px') {
-        element.style.fontSize = '2rem';
-        element.style.height = '250px';
-        }
     });
 }
 
