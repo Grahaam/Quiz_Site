@@ -146,5 +146,8 @@
     #score {
         font-size: calc(40px + (58 - 40) * ((100vw - 300px) / (768 - 300)));
     }
+    #progressText {
+        font-size: calc(15px + (30 - 15) * ((100vw - 300px) / (768 - 300)));
+    }
 }
     
