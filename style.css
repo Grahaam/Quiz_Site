@@ -203,7 +203,7 @@ a {
 /* Anniversary */
 .cute {
     display: flex;
-    magrgin : auto;
+    margin : auto;
     width : 540px;
     height: auto;
     max-height: 1000px;
@@ -213,9 +213,11 @@ a {
     animation:alternate-reverse 15s linear infinite example;
 }
 
-@media screen and (max-width 768px) {
+/* Phone */
+
+@media screen and (max-width: 768px) {
     .btn {
-        width: 370px
+        width: 370px;
         font-size: calc(14px + (30 - 14) * ((100vw - 300px) / (1600 - 300)));
     }
 }
