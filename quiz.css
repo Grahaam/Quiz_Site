@@ -127,9 +127,9 @@
         grid-template-columns: 1fr;
         min-width: 13rem;
     }
-    .container {
+    /* .container {
         max-width: 370px;
-    }
+    } */
     #question{
         font-size: 8.5vw;
         margin-left:20px ;
