@@ -138,7 +138,7 @@
         font-size: calc(25px + (60 - 25) * ((100vw - 300px) / (1600 - 300)));   
     }
     #hud {
-        font-size: calc(25px + (58 - 25) * ((100vw - 300px) / (768 - 300)));
+        font-size: calc(20px + (40 - 20) * ((100vw - 300px) / (768 - 300)));
     }
     #progressBar {
         width: 10rem;
