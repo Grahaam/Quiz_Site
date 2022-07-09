@@ -16,23 +16,30 @@
       <div id="end" class="flex-column flex-center">
         <h1 id="finalScore">0</h1>
         <form action="" class="end-form-container">
-            <h2 id="end-text">
-                Entre ton nom pour enregistrer ton score !
-            </h2>
-            <input
-                type="text"
-                name="name"
-                id="username"
-                placeholder="Entrez votre nom"
-                required
-            />
-            <button type="submit" class="btn" id="saveScore" onclick="saveHighScore(event)" disabled>
-                Save
-            </button>
-            
+          <h2 id="end-text">Entre ton nom pour enregistrer ton score !</h2>
+          <input
+            type="text"
+            name="name"
+            id="username"
+            placeholder="Entrez votre nom"
+            required
+          />
+          <button
+            type="submit"
+            class="btn"
+            id="saveScore"
+            onclick="saveHighScore(event)"
+            disabled
+          >
+            Save
+          </button>
         </form>
         <a href="/quiz.html" class="end btn">On rejoue?</a>
-        <a href="/index.html" class="end btn">Home<i class="fas fa-home"></i></a>
-        <script src='end.js'></script>
+        <a href="/index.html" class="end btn"
+          >Home<i class="fas fa-home"></i
+        ></a>
+      </div>
+    </div>
+    <script src="end.js"></script>
   </body>
 </html>

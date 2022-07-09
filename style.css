@@ -67,8 +67,7 @@ h2 {
     align-items: center;
     margin: auto 1rem;
     padding: 2rem;
-    max-width: 1000px
-
+    max-width: 1000px;
 }
 
 .flex-column {
@@ -219,5 +218,8 @@ a {
     .btn {
         width: 370px;
         font-size: calc(14px + (30 - 14) * ((100vw - 300px) / (1600 - 300)));
+    }
+    .container {
+        max-width: 340px;
     }
 }
