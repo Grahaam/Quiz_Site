@@ -13,3 +13,8 @@ body {
     margin-bottom: 0.5rem;
 }
 
+@media screen and (max-width: 780px) {
+    .h1 {
+        font-size: calc(30px + (60 - 30) * ((100vw - 300px) / (780 - 300)));
+    }
+}
