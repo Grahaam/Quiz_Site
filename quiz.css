@@ -128,15 +128,20 @@
         min-width: 10rem;
     }
     .container {
-        margin: 10px;
         max-width: 340px;
     }
     #question{
         font-size: 10vw;
-        margin-left:10px ;
+        margin-left:20px ;
     }
     .choice-container {
         font-size: calc(14px + (30 - 14) * ((100vw - 300px) / (1600 - 300)));   
+    }
+    #hud {
+        font-size: calc(30px + (58 - 30) * ((100vw - 300px) / (768 - 300)));
+    }
+    #progressBar {
+        width: 15rem;
     }
 }
     
