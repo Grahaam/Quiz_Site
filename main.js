@@ -14,7 +14,7 @@ let questionCounter = 0;
 let availableQuestions = [];
 const alphabet = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ';
 const SCORE_PER_QUESTION = 100;
-const MAX_QUESTIONS = 4;
+const MAX_QUESTIONS = 10;
 
 
 
@@ -197,6 +197,51 @@ let questions = [
             {text: 'Pouvoir de voler', correct: false },
             {text: 'Contrôle du temps', correct: true },
             {text: 'Mind control', correct: false},
+        ]
+    },
+    {
+        question: 'Qu\'est-ce que je changerai à propos de moi ? ?',
+        answers: [
+            {text: 'Mon cerveau (j\'en ai marre de pas savoir écrire)', correct: true,},
+            {text: 'Mon corps (genre devenir STOCK)', correct: false },
+            {text: 'Mes cheveux (adieu la rousseur)', correct: false },
+            {text: 'Ma teub (la remplacer par une boîte de pringles)', correct: false},
+        ]
+    },
+    {
+        question: 'Si je ne devais manger qu\'un plat pour le restant de mes jours ?',
+        answers: [
+            {text: 'Steak sauces Morilles', correct: false,},
+            {text: 'Soupe', correct: false },
+            {text: 'LASAGNAS', correct: true },
+            {text: 'IT\'S PIZZ TIME', correct: false},
+        ]
+    },
+    {
+        question: 'Quel truc me fait le plus rire ?',
+        answers: [
+            {text: 'L\'humour bien noir', correct: false,},
+            {text: 'Les YTP', correct: false },
+            {text: 'LE CUL LAUL', correct: true },
+            {text: 'Your life', correct: false},
+        ]
+    },
+    {
+        question: 'Quel est le pire cadeau que j\'ai reçu ?',
+        answers: [
+            {text: 'Une paire de savatte pour mes 18 ans', correct: true,},
+            {text: 'Le livre que j\'avais offert à la personne qui me l\'a offert ', correct: false },
+            {text: 'Un jeu que cette personne m\'avait déjà offert', correct: false },
+            {text: 'Mon parrain offre un pc gamer à mon cousin et un Tshirt ', correct: false},
+        ]
+    },
+    {
+        question: 'Testons ton bon sens : La bonne réponse est D ',
+        answers: [
+            {text: 'La réponse A est peut être la bonne réponse', correct: false,},
+            {text: 'Réponse 4', correct: false },
+            {text: 'Ceci est la réponse D', correct: true },
+            {text: '🎲', correct: false},
         ]
     },
 ]
