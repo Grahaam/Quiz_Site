@@ -222,8 +222,8 @@ a {
     /* .container {
         max-width: 340px;
     } */
-    .h1 {
-        font-size: calc(14px + (30 - 14) * ((100vw - 300px) / (1600 - 300)));    
+    h1 {
+        font-size: 3.5rem;   
     }
 
 }
