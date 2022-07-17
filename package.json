@@ -1,5 +1,8 @@
 {
   "devDependencies": {
     "prettier": "2.7.1"
+  },
+  "dependencies": {
+    "scratchcard-js": "^1.4.10"
   }
 }
