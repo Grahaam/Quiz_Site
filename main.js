@@ -156,10 +156,10 @@ let questions = [
         question: 'Laquelle de ces choses je ne sais PAS faire ?',
         answers: [
             {text: 'Compter en binaire', correct: false},
-            {text: 'Parler français', correct: false },
+            {text: 'Parler français', correct: true },
             {text: 'Choisir un film', correct: true },
             {text: 'Rester concentré plus de 30 min', correct: false},
-            {text: 'Faires des putain de questions', correct: true},
+            {text: 'Faires des putain de questions', correct: false},
         ]
     },
     {
