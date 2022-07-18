@@ -350,7 +350,7 @@ function selectAnswer() {
 
 function showQuestion(question) {
     questionElement.innerText = question.question;
-    questions.answers.sort(() => Math.random() - .5);
+    question.answers.sort(() => Math.random() - .5);
     progressText.innerText = `Question ${currentQuestionIndex}/${MAX_QUESTIONS}`
     let prefixCount = 0;
     question.answers.forEach(answer => {
