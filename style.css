@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Nova+Square&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Loved+by+the+King&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nova+Round&display=swap');
 @keyframes example {
     0%  {color: red;}
     10% {color: orange;}
@@ -105,6 +106,7 @@ h2 {
     border: 1px solid rgb(255, 255, 255);
     border-radius: 20px;
     background: linear-gradient(90deg, rgba(236, 112, 236, 0.825) 10%,rgb(62, 68, 232) 70%);
+    font-family: 'Nova Round', cursive;
 }
 
 .btn:hover {
