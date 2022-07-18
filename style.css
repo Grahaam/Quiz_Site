@@ -1,5 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Nova+Square&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Loved+by+the+King&display=swap');
 @keyframes example {
     0%  {color: red;}
     10% {color: orange;}
@@ -24,6 +24,10 @@
     margin: 0;
     padding: 0;
     font-family: 'Nova Square', cursive;
+}
+
+#anniver {
+    font-family: 'Loved by the King', cursive;
 }
 
 body {
