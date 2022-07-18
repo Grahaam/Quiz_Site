@@ -1,4 +1,4 @@
-import '.scratchcard.js';
+import './scratchcard.js';
 
 
 const scContainer = document.getElementById('js--sc--container')
