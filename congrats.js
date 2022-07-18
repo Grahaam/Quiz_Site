@@ -1,5 +1,6 @@
 import './node_modules/scratchcard-js/build/scratchcard.js';
 
+import { ScratchCard, SCRATCH_TYPE } from 'scratchcard-js';
 
 const scContainer = document.getElementById('js--sc--container')
 const scInfos = document.querySelector('.sc__infos');
