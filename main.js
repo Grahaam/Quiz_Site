@@ -281,7 +281,7 @@ let questions = [
         question: 'Laquelle de ces traditions de famille est vraie ?',
         answers: [
             {text: 'Chaque année les cendres de mon grand père changent de propriétaire', correct: false,},
-            {text: 'Ma mère achète quasiment tout les ans un vouvel objet qui fait du bruit (chiant)', correct: false },
+            {text: 'Ma mère achète quasiment tout les ans un nouvel objet qui fait du bruit (chiant)', correct: false },
             {text: 'Faire des gauffres maison en famille sauf que tout le monde est parti petit à petit', correct: false },
             {text: 'Faire les fêtes que personne ne fait (genre la Saint Bernard)', correct: true},
         ]
