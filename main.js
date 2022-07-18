@@ -232,7 +232,7 @@ let questions = [
             {text: 'Une paire de savatte pour mes 18 ans', correct: true,},
             {text: 'Le livre que j\'avais offert à la personne qui me l\'a offert ', correct: false },
             {text: 'Un jeu que cette personne m\'avait déjà offert', correct: false },
-            {text: 'Mon parrain offre un pc gamer à mon cousin et un Tshirt ', correct: false},
+            {text: 'Mon parrain offre un pc gamer à mon cousin et un Tshirt à moi T-T', correct: false},
         ]
     },
     {
