@@ -23,7 +23,6 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-    font-family: 'Nova Square', cursive;
 }
 
 #anniver {
@@ -72,6 +71,7 @@ h2 {
     margin: auto 1rem;
     padding: 0.8rem;
     max-width: 1000px;
+    font-family: 'Nova Square', cursive;
 }
 
 .flex-column {
