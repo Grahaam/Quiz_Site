@@ -214,7 +214,7 @@ let questions = [
             {text: 'Steak sauces Morilles', correct: false,},
             {text: 'Soupe', correct: false },
             {text: 'LASAGNAS', correct: true },
-            {text: 'IT\'S PIZZ TIME', correct: false},
+            {text: 'IT\'S PIZZA TIME', correct: false},
         ]
     },
     {
@@ -232,7 +232,7 @@ let questions = [
             {text: 'Une paire de savatte pour mes 18 ans', correct: true,},
             {text: 'Le livre que j\'avais offert à la personne qui me l\'a offert ', correct: false },
             {text: 'Un jeu que cette personne m\'avait déjà offert', correct: false },
-            {text: 'Mon parrain offre un pc gamer à mon cousin et un Tshirt ', correct: false},
+            {text: 'Mon parrain offre un pc gamer à mon cousin et un Tshirt à moi T-T', correct: false},
         ]
     },
     {
@@ -242,6 +242,57 @@ let questions = [
             {text: 'Réponse 4', correct: false },
             {text: 'Ceci est la réponse D', correct: true },
             {text: '🎲', correct: false},
+        ]
+    },
+    {
+        question: 'Qui a été mon premier crush ?',
+        answers: [
+            {text: 'Nala', correct: false,},
+            {text: 'Kim Possible', correct: true },
+            {text: 'Daphne (Scooby-Doo)', correct: false },
+            {text: 'Belle (Super Nanas)', correct: false},
+            {text: 'Frankie', correct: false},
+            {text: 'Jessica Rabbit', correct: false},
+            {text: 'Princesse Fiona', correct: false},
+        ]
+    },
+      {
+        question: 'Quel est le truc le plus fou que j\'ai vu en soirée ?',
+        answers: [
+            {text: 'Des chinois sur le toit', correct: false,},
+            {text: 'Un mec dans le composte', correct: false },
+            {text: 'TOI LAUL', correct: true },
+            {text: 'Une meuf qui se fait doigter devant absolument tout le monde', correct: true},
+        ]
+    },
+      {
+        question: 'Si je devais être un animal je serai ?',
+        answers: [
+            {text: 'Un loup', correct: false,},
+            {text: 'Une pygarque à tête blanche', correct: false },
+            {text: 'Moi ptdr je suis déjà feral', correct: true },
+            {text: 'Un corbeau', correct: true},
+            {text: 'Un grizzly', correct: false},
+            {text: 'Une araignée', correct: false},
+            {text: 'Un poisson, genre le requin pour te BOUFFER LE CUL', correct: true},
+        ]
+    },
+      {
+        question: 'Laquelle de ces traditions de famille est vraie ?',
+        answers: [
+            {text: 'Chaque année les cendres de mon grand père changent de propriétaire', correct: false,},
+            {text: 'Ma mère achète quasiment tout les ans un vouvel objet qui fait du bruit (chiant)', correct: false },
+            {text: 'Faire des gauffres maison en famille sauf que tout le monde est partie petit à petit', correct: false },
+            {text: 'Faire les fêtes que personne ne fait (genre la Saint Bernard)', correct: true},
+        ]
+    },
+    {
+        question: 'Quel est l\'endroit le plus wtf ou je me suis endormie ?',
+        answers: [
+            {text: 'Dans quelqu\'un', correct: false,},
+            {text: 'Sur un banc random en pleine ville j\'avais pas prévu de pas pouvoir dormir à la soirée', correct: true },
+            {text: 'Dans un arbre genre haut', correct: false },
+            {text: 'Dans un composte (cache-cache)', correct: false},
         ]
     },
 ]
@@ -299,6 +350,7 @@ function selectAnswer() {
 
 function showQuestion(question) {
     questionElement.innerText = question.question;
+    question.answers.sort(() => Math.random() - .5);
     progressText.innerText = `Question ${currentQuestionIndex}/${MAX_QUESTIONS}`
     let prefixCount = 0;
     question.answers.forEach(answer => {
