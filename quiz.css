@@ -17,6 +17,7 @@
     border-radius: 10px;
     background: linear-gradient(90deg, rgb(185, 72, 255) 0%, rgb(158, 86, 158) 100%);
     transition: all 0.2s ease-out;
+    font-family: 'Nova Round', cursive;
 }
 
 .choice-container:hover, .choice-container:focus {
@@ -28,6 +29,7 @@
 .choice-prefix {
     font-size: 2rem;
     margin: auto 1rem;
+    font-family: 'Nova Round', cursive;
 }
 
 .choice-text {
@@ -37,6 +39,7 @@
     width: 100%;
     align-self: center;
     font-size: calc(20px + (40 - 20) * ((100vw - 300px) / (1600 - 300)));
+    font-family: 'Nova Round', cursive;
 }
 
 #question {
