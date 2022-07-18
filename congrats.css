@@ -60,6 +60,10 @@ font-weight: bold;
 font-size: calc(14px + (30 - 14) * ((100vw - 300px) / (1600 - 300)));
 }
 
+.end {
+    margin-top: 1em;
+}
+
 @media screen and(max-width: 768px) {
     h1{
         font-size: calc(40px + (80 - 40) * ((100vw - 300px) / (1600 - 300)));

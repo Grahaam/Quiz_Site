@@ -15,7 +15,7 @@ const sc = new ScratchCard
         nPoints: 50,
         pointSize: 4,
         callback: () => {
-            scInfos.innerText = 'Bien joué !';
+            scInfos.innerText = 'I am your Slut <3';
             const img = document.querySelectorAll(".sc__container img");
             img[0].style.filter = "blur(0)";
             img[0].style.animation = "pop 1.5s alternate ease-in-out infinite";
