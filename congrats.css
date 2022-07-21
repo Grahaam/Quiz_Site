@@ -59,7 +59,7 @@ line-height: 40px;
 margin-top: 5px;
 margin-bottom: 1em;
 font-weight: bold;
-font-size: calc(20px + (40 - 20) * ((100vw - 300px) / (1600 - 300)));
+font-size: calc(30px + (60 - 30) * ((100vw - 300px) / (1600 - 300)));
 }
 
 .end {
