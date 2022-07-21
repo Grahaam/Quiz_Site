@@ -38,7 +38,7 @@ h1{
     left: 0;
     width: auto;
     height: 97%;
-    filter: blur(10px);
+    filter: blur(20px);
     margin-bottom: 2em;
   }
   
