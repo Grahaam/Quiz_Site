@@ -28,14 +28,16 @@ h1{
     position: relative;
     height: 330px;
     max-width: 330px;
+    display: flex;
+    justify-content: center;
   }
   
   .sc__container > img {
     position: relative;
     top: 0;
     left: 0;
-    width: 100%;
-    height: auto;
+    width: auto;
+    height: 100%;
     filter: blur(10px);
     margin-bottom: 2em;
   }
