@@ -9,7 +9,7 @@ const sc = new ScratchCard
         containerHeight: 330,
         brushSrc: '',
         imageForwardSrc: './images/scratch.png',
-        imageBackgroundSrc: './images/SEX.jpg',
+        imageBackgroundSrc: './images/istockphoto-1219614648-612x612.png',
         htmlBackground: ``,
         clearZoneRadius: 40,
         nPoints: 50,
