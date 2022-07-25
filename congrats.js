@@ -16,8 +16,7 @@ const sc = new ScratchCard
         nPoints: 50,
         pointSize: 4,
         callback: () => {
-            scInfos.innerText = 'TICKET TO BARCELONA';
-            queryForm.appendChild(document.createElement("br"));
+            scInfos.innerHTML = 'TICKET TO BARCELONA<br>(not the real ones yet)';
             const img = document.querySelectorAll(".sc__container img");
             img[0].style.filter = "blur(0)";
             img[0].style.animation = "pop 1.5s alternate ease-in-out infinite";
