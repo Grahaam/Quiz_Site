@@ -54,12 +54,10 @@ h1{
 .sc__infos {
 text-align: center;
 color: white;
-height: 40px;
 line-height: 40px;
 margin-top: 5px;
-margin-bottom: 1em;
 font-weight: bold;
-font-size: calc(17px + (35 - 17) * ((100vw - 300px) / (1600 - 300)));
+font-size: calc(25px + (50 - 25) * ((100vw - 300px) / (1600 - 300)));
 }
 
 .end {
