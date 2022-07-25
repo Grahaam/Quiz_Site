@@ -6,6 +6,7 @@ pop {
 
 h1{
     font-size: calc(40px + (80 - 40) * ((100vw - 300px) / (1600 - 300)));
+    margin-bottom: 1.5rem;
 }
 
 .sc__inner {
