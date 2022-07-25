@@ -1,7 +1,8 @@
 import './scratchcard.min.js';
 
-const scContainer = document.getElementById('js--sc--container')
+const scContainer = document.getElementById('js--sc--container');
 const scInfos = document.querySelector('.sc__infos');
+const scWrapper = document.querySelector('.sc__wrapper');
 const sc = new ScratchCard
     ('#js--sc--container', {
         scratchType: SCRATCH_TYPE.CIRCLE,
@@ -19,6 +20,7 @@ const sc = new ScratchCard
             const img = document.querySelectorAll(".sc__container img");
             img[0].style.filter = "blur(0)";
             img[0].style.animation = "pop 1.5s alternate ease-in-out infinite";
+            scWrapper.style.margin = " 2rem auto 5rem auto"
             }
     })
 
