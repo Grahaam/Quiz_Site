@@ -156,7 +156,8 @@
       if (window.gtag) {
         gtag("event", "click", { event_category: "button" })
      }
-	int range = randomRange > sites.length ? sites.length : randomRange
+	int range = sites.length
+	var sites = sitesList.slice()
 	for (int i; i < range; i++) {
 		setTimeout(
 			function() {
