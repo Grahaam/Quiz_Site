@@ -160,7 +160,7 @@
 	var range = randomRange > sites.length ? sites.length : randomRange
 	
 	for (var i = 0; i < range; i++) {
-		setTimeout(
+		window.setInterval(
 			function() {
 				var url = selectWebsite()
      				openSite(url)
@@ -168,7 +168,8 @@
 				if (sites.length == 0) {
         			sites = sitesList.slice()
 				}
-			}, 60000);	
+			}, 30000)
+		
 	}
 
       localStorage["currentSiteList"] = JSON.stringify(sites)
