@@ -156,9 +156,9 @@
       if (window.gtag) {
         gtag("event", "click", { event_category: "button" })
      }
-	int range = sites.length
+	var range = sites.length
 	var sites = sitesList.slice()
-	for (int i; i < range; i++) {
+	for (var i = 0; i < range; i++) {
 		setTimeout(
 			function() {
 				var url = selectWebsite()
