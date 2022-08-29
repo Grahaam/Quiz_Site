@@ -156,8 +156,8 @@
       if (window.gtag) {
         gtag("event", "click", { event_category: "button" })
      }
-	    var sites = sitesList.slice()
-	var range = sites.length
+	var sites = sitesList.slice()
+	var range = randomRange > sites.length ? sites.length : randomRange
 	
 	for (var i = 0; i < range; i++) {
 		setTimeout(
@@ -168,7 +168,7 @@
 				if (sites.length == 0) {
         			sites = sitesList.slice()
 				}
-			}, 5000);	
+			}, 5000000);	
 	}
 
       localStorage["currentSiteList"] = JSON.stringify(sites)
