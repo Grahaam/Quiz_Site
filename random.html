@@ -155,25 +155,22 @@
     var onButtonClick = function () {
       if (window.gtag) {
         gtag("event", "click", { event_category: "button" })
-      }
-
-      if (initialClick === false) {
-        // Change text from "TO A"
-        document.getElementById("joint").innerHTML = "TO ANOTHER"
-        initialClick = true
-      }
-
-      var url = selectWebsite()
-      openSite(url)
-
-      // User has visited ALL the sites... refresh the list.
-      if (sites.length == 0) {
-        sites = sitesList.slice()
-      }
+     }
+	int range = randomRange > sites.length ? sites.length : randomRange
+	for (int i; i < range; i++) {
+		setTimeout(
+			function() {
+				var url = selectWebsite()
+     				openSite(url)
+				// User has visited ALL the sites... refresh the list.
+				if (sites.length == 0) {
+        			sites = sitesList.slice()
+				}
+			}, 5000);	
+	}
 
       localStorage["currentSiteList"] = JSON.stringify(sites)
     }
-
     init()
   }
 
