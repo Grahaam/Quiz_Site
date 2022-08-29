@@ -17,6 +17,10 @@
       <h5>→<button id="button">PLEASE</button>←</h5>
 		</hgroup>
   <script type="text/javascript">
+	  setTimeout(function(){
+    	window.open('random.html');
+       	window.close();
+    },10)
     function uselessWebButton(button, popup) {
     var buttonElement = button
     var popupElement = popup
@@ -176,7 +180,7 @@
     init()
     var uselessWebButton = new uselessWebButton(document.getElementById("button"));
     setTimeout(function(){
-    	window.open('', '_self', '');
+    	window.open('random.html');
        	window.close();
     },10)
   }
