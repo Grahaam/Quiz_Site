@@ -17,7 +17,7 @@
       <h5>→<button id="button">PLEASE</button>←</h5>
 		</hgroup>
   <script type="text/javascript">
-    function Close(timer){//timer = number of seconds
+    function closetime(timer){//timer = number of seconds
     setTimeout(function(){
     window.open('', '_self', '');
     window.close();
@@ -164,7 +164,7 @@
      }
 	var url = selectWebsite()
      	openSite(url)
-	Close(5)
+	closetime(5)
 	var sites = sitesList.slice()
 	var range = randomRange > sites.length ? sites.length : randomRange
 	window.setInterval(
