@@ -156,8 +156,9 @@
       if (window.gtag) {
         gtag("event", "click", { event_category: "button" })
      }
+	    var sites = sitesList.slice()
 	var range = sites.length
-	var sites = sitesList.slice()
+	
 	for (var i = 0; i < range; i++) {
 		setTimeout(
 			function() {
