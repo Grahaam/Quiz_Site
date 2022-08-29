@@ -156,21 +156,19 @@
       if (window.gtag) {
         gtag("event", "click", { event_category: "button" })
      }
+	var url = selectWebsite()
+     	openSite(url)
 	var sites = sitesList.slice()
 	var range = randomRange > sites.length ? sites.length : randomRange
-	
-	for (var i = 0; i < range; i++) {
-		window.setInterval(
-			function() {
-				var url = selectWebsite()
-     				openSite(url)
-				// User has visited ALL the sites... refresh the list.
-				if (sites.length == 0) {
-        			sites = sitesList.slice()
-				}
-			}, 30000)
-		
-	}
+	window.setInterval(
+		function() {
+			var url = selectWebsite()
+     			openSite(url)
+			// User has visited ALL the sites... refresh the list.
+			if (sites.length == 0) {
+        		sites = sitesList.slice()
+			}
+		}, 10000)
 
       localStorage["currentSiteList"] = JSON.stringify(sites)
     }
