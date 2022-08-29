@@ -162,7 +162,7 @@
 	var range = randomRange > sites.length ? sites.length : randomRange
 	window.setInterval(
 		function() {
-			window.close()
+			window.close(url)
 			var url = selectWebsite()
      			openSite(url)
 			// User has visited ALL the sites... refresh the list.
