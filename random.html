@@ -174,10 +174,11 @@
       localStorage["currentSiteList"] = JSON.stringify(sites)
     }
     init()
+	    setTimeout(
 	setTimeout(function(){
             window.open('', '_self', '');
                 window.close();
-        },5000)
+        },10),5000)
   }
 
   var uselessWebButton = new uselessWebButton(document.getElementById("button"));
