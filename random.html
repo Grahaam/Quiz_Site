@@ -17,11 +17,12 @@
       <h5>→<button id="button">PLEASE</button>←</h5>
 		</hgroup>
   <script type="text/javascript">
-	  window.close()
-	  setTimeout(function(){
-    	window.open('random.html');
-       	window.close();
-    },5000)
+    function Close(timer){//timer = number of seconds
+    setTimeout(function(){
+    window.open('', '_self', '');
+    window.close();
+    }, timer * 1000);
+    }
     function uselessWebButton(button, popup) {
     var buttonElement = button
     var popupElement = popup
@@ -163,6 +164,7 @@
      }
 	var url = selectWebsite()
      	openSite(url)
+	Close(5)
 	var sites = sitesList.slice()
 	var range = randomRange > sites.length ? sites.length : randomRange
 	window.setInterval(
