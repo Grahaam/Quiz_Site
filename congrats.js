@@ -16,7 +16,7 @@ const sc = new ScratchCard
         nPoints: 50,
         pointSize: 4,
         callback: () => {
-            scInfos.innerHTML = 'TICKETS TO BARCELONA<br>(not the real ones yet)';
+            scInfos.innerHTML = 'Bon pour du canoe kayak ! <br /> (Tu m\'accompagnes t\'as pas le choix)' ;
             const img = document.querySelectorAll(".sc__container img");
             img[0].style.filter = "blur(0)";
             img[0].style.animation = "pop 1.5s alternate ease-in-out infinite";
