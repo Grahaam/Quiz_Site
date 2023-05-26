@@ -10,7 +10,7 @@ const sc = new ScratchCard
         containerHeight: 330,
         brushSrc: '',
         imageForwardSrc: './images/pngwing.com (2).png',
-        imageBackgroundSrc: './images/istockphoto-1219614648-612x612.png',
+        imageBackgroundSrc: './images/kayak-icon.jpg',
         htmlBackground: ``,
         clearZoneRadius: 40,
         nPoints: 50,
